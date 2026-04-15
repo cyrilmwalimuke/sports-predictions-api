@@ -25,5 +25,9 @@ app.get("/", (req, res) => {
   res.send("API is running...");
 });
 
+app.get("/ping", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on ${PORT}`));
