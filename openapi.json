@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Simple Quote API",
+    "version": "1.0.0",
+    "description": "Returns random quotes"
+  },
+  "servers": [
+    {
+      "url": "https://sports-predictions-api.onrender.com"
+    }
+  ],
+  "paths": {
+    "/quote": {
+      "get": {
+        "summary": "Get random quote",
+        "responses": {
+          "200": {
+            "description": "A random quote",
+            "content": {
+              "application/json": {
+                "example": {
+                  "quote": "Stay hungry, stay foolish."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
